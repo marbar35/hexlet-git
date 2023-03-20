@@ -6,7 +6,7 @@ variables:
 
 
 jobs:
-  - job: run on Windows
+  - job: Run on Windows
     pool:
       vmImage: 'windows-latest'
     steps:
