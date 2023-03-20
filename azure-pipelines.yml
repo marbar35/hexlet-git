@@ -1,0 +1,25 @@
+trigger:
+- main
+
+variables:
+  buildConfiguration: 'Release'
+
+
+jobs:
+  - job: run on Windows
+    pool:
+      vmImage: 'w-latest'
+    steps:
+    - script: |
+        echo Hello, world!
+        echo See
+      displayName: 'Run a one-line script'
+  
+  - job: run on Linux
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - script: |
+        echo Hello, world!
+        echo See
+      displayName: 'Run a one-line script'
